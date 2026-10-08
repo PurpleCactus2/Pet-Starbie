@@ -14,16 +14,18 @@
 
 ## Contents
 
-1. [2026-10-05 – Work session](#2026-10-05-work-session)
+1. [2026-10-05 – Starting schematic](#2026-10-05-starting-schematic)
 2. [2026-10-06 – Finishing the main schematic](#2026-10-06-finishing-the-main-schematic)
 3. [2026-10-06 – Working on the PCB (almost done)](#2026-10-06-working-on-the-pcb-almost-done)
 4. [2026-10-07 – Drawing the sprite](#2026-10-07-drawing-the-sprite)
 
 ## Design
 
-### 2026-10-05 – Work session
+### 2026-10-05 – Starting schematic
 
 **0.68h**
+
+Starting schematic
 
 [Timelapse](https://lookout.hackclub.com/api/media/5124fac8-8f27-4bac-8b43-9de2a06290ab/video.mp4)
 
