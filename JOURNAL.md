@@ -16,7 +16,7 @@
 
 1. [2026-10-05 – Work session](#2026-10-05-work-session)
 2. [2026-10-06 – Starting the Schematic](#2026-10-06-starting-the-schematic)
-3. [2026-10-06 – Finishing the main schematic](#2026-10-06-finishing-the-main-schematic)
+3. [2026-10-06 – Working on the PCB (almost done)](#2026-10-06-working-on-the-pcb-almost-done)
 4. [2026-10-07 – Drawing the sprite](#2026-10-07-drawing-the-sprite)
 
 ## Design
@@ -35,11 +35,11 @@ Starting the Schematic
 
 [Timelapse](https://lookout.hackclub.com/api/media/4f833298-d2eb-4d0a-9336-e219d8e7bda9/video.mp4)
 
-### 2026-10-06 – Finishing the main schematic
+### 2026-10-06 – Working on the PCB (almost done)
 
 **2.78h**
 
-Finishing the main schematic
+Working on the PCB (almost done)
 
 [Timelapse](https://lookout.hackclub.com/api/media/f058ea95-a168-4642-b2b1-bfae82114e59/video.mp4)
 
