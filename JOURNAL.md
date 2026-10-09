@@ -20,7 +20,7 @@
 4. [2026-10-07 – Drawing the sprite](#2026-10-07-drawing-the-sprite)
 5. [2026-10-08 – Adding the external battery circuit to the schematic](#2026-10-08-adding-the-external-battery-circuit-to-the-schema)
 6. [2026-10-08 – Finalising the PCB and adding pads for the external battery](#2026-10-08-finalising-the-pcb-and-adding-pads-for-the-extern)
-7. [2026-10-09 – Work session](#2026-10-09-work-session)
+7. [2026-10-09 – Modelling the enclosure for the PCB and battery](#2026-10-09-modelling-the-enclosure-for-the-pcb-and-battery)
 
 ## Design
 
@@ -72,8 +72,10 @@ Finalising the PCB and adding pads for the external battery
 
 [Timelapse](https://lookout.hackclub.com/api/media/1d2513d3-6a69-44a8-a347-27950cfeb6b2/video.mp4)
 
-### 2026-10-09 – Work session
+### 2026-10-09 – Modelling the enclosure for the PCB and battery
 
 **2.33h**
+
+Modelling the enclosure for the PCB and battery
 
 [Timelapse](https://lookout.hackclub.com/api/media/d63bb2bd-c46e-4459-97df-47303168b3e3/video.mp4)
