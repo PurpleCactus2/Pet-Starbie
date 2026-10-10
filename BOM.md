@@ -19,7 +19,7 @@
 | [MX Switches](https://www.aliexpress.com/item/1005006376024657.html?spm=a2g0o.productlist.main.1.165735f5ClXEcQ&algo_pvid=4a830536-a4b2-499f-a21c-93d9edf09368&algo_exp_id=4a830536-a4b2-499f-a21c-93d9edf09368-0&pdp_ext_f=%7B%22order%22%3A%222317%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%2137.52%2110.88%21%21%2125.16%217.30%21%400b0fe40d17916655923207967e1029%2112000037159110206%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895%3BpisId%3A5000000219435413&curPageLogUid=OjmnomvXuXFE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006376024657%7C_p_origin_prod%3A) | Buttons to control different functions (Minimum order size: 10pcs) | 1 | $3.93 | $3.93 | [AliExpress](https://www.aliexpress.com/item/1005006376024657.html?spm=a2g0o.productlist.main.1.165735f5ClXEcQ&algo_pvid=4a830536-a4b2-499f-a21c-93d9edf09368&algo_exp_id=4a830536-a4b2-499f-a21c-93d9edf09368-0&pdp_ext_f=%7B%22order%22%3A%222317%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%2137.52%2110.88%21%21%2125.16%217.30%21%400b0fe40d17916655923207967e1029%2112000037159110206%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895%3BpisId%3A5000000219435413&curPageLogUid=OjmnomvXuXFE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006376024657%7C_p_origin_prod%3A) |
 | [PCB](https://cart.jlcpcb.com/quote?spm=jlcpcb.Public.2006&spm=Jlcpcb.Instantquote&_t=1791669462672&up_spm=Jlcpcb.Loginpage.1003) | Main Board (Use gerbers provided) | 1 | $4.00 | $4.00 | [JLCPCB](https://cart.jlcpcb.com/quote?spm=jlcpcb.Public.2006&spm=Jlcpcb.Instantquote&_t=1791669462672&up_spm=Jlcpcb.Loginpage.1003) |
 | **Parts subtotal** | — | — | — | **$23.98** | — |
-| **Tax & shipping** | — | — | — | **$2.82** | — |
-| **Total** | — | — | — | **$26.80** | — |
+| **Tax & shipping** | — | — | — | **$6.98** | — |
+| **Total** | — | — | — | **$30.96** | — |
 
-$3.20 left of the tier's funding.
+**$0.96 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
