@@ -24,3 +24,8 @@
 | **Total** | — | — | — | **$30.96** | — |
 
 **$0.96 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
+
+**Please Note:** 
+- For full transparency only the raw prices for each component have been listed, in reality siginificant discounts do apply for almost all of the components
+- The "first order discount" has been included in the price of the PCB, being taken away from the shipping cost (ie. 4$ PCB + 8.16$ shipping --> 4$ PCB + 4.16$ shipping)
+- I am willing to fund any other components/shipping costs even if only the partial grant is given
