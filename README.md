@@ -145,11 +145,11 @@ Here is a more detailed view of the screw holes inside the case as well as of th
 | [Passive Components](https://www.aliexpress.com/item/1005002489867848.html?spm=a2g0o.productlist.main.9.370926a8ctSQGM&algo_pvid=7c869774-9e38-45cb-95e6-598a8294238c&algo_exp_id=7c869774-9e38-45cb-95e6-598a8294238c-8&pdp_ext_f=%7B%22order%22%3A%225679%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%215.69%215.69%21%21%210.57%210.57%21%402103842a17917251852512610e0d09%2112000020846080146%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895&curPageLogUid=x1GYFxVaUCZz&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005002489867848%7C_p_origin_prod%3A) | (Resistors, LED, Switch) (**Self provided**) | 1 | $0.01 | $0.01 | (Example part) [AliExpress](https://www.aliexpress.com/item/1005002489867848.html?spm=a2g0o.productlist.main.9.370926a8ctSQGM&algo_pvid=7c869774-9e38-45cb-95e6-598a8294238c&algo_exp_id=7c869774-9e38-45cb-95e6-598a8294238c-8&pdp_ext_f=%7B%22order%22%3A%225679%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%215.69%215.69%21%21%210.57%210.57%21%402103842a17917251852512610e0d09%2112000020846080146%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895&curPageLogUid=x1GYFxVaUCZz&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005002489867848%7C_p_origin_prod%3A) | — |
 | [Screws](https://www.aliexpress.com/item/33043885403.html?spm=a2g0o.productlist.main.1.704136c54twNW7&algo_pvid=0f932d31-3b09-495f-9419-6458a1488934&algo_exp_id=0f932d31-3b09-495f-9419-6458a1488934-0&pdp_ext_f=%7B%22order%22%3A%2214327%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%2116.97%2116.97%21%21%211.70%211.70%21%400b1585c117917410156522141e0dd5%2112000020018123413%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895&curPageLogUid=5T3k97JHejJu&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A33043885403%7C_p_origin_prod%3A) | For assembly of the enclosure, 4x self-tapping M3x8  and M2.5x8 (**Self provided**) | 1 | $0.01 | $0.01 | (Example part) [AliExpress](https://www.aliexpress.com/item/33043885403.html?spm=a2g0o.productlist.main.1.704136c54twNW7&algo_pvid=0f932d31-3b09-495f-9419-6458a1488934&algo_exp_id=0f932d31-3b09-495f-9419-6458a1488934-0&pdp_ext_f=%7B%22order%22%3A%2214327%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21NOK%2116.97%2116.97%21%21%211.70%211.70%21%400b1585c117917410156522141e0dd5%2112000020018123413%21sea%21NO%218463637778%21X%211%210%21n_tag%3A-29911%3Bd%3A22d43e35%3Bm03_new_user%3A-29895&curPageLogUid=5T3k97JHejJu&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A33043885403%7C_p_origin_prod%3A) | — |
 | **Parts subtotal** | — | — | — | **$24.01** | — | **$17.56** |
-| **Tax & shipping** | — | — | — | **$6.97** | — | **$6.97** |
-| **Total** | — | — | — | **$30.98** | — | **$24.53** |
+| **Tax & shipping** | — | — | — | **$6.97** | — | **$7.87** |
+| **Total** | — | — | — | **$30.98** | — | **$25.43** |
 
 **Please Note:** 
-- For full transparency only the raw prices for each component have been listed, in reality significant discounts do apply for almost all of the components. The total of $30.98 represents the maximum possible price for all the components, discounted prices are shown in the right column and in cart screenshots below
+- For full transparency only the raw prices for each component have been listed, in reality significant discounts do apply for almost all of the components. **The total of $30.98 represents the maximum possible price** for all the components, discounted prices are shown in the right column and in cart screenshots below
 - Shipping has been disregarded for all components except for the PCB because of the free shipping offer applied to all choice orders above 10$
 - The "first order discount" has been included in the price of the PCB, being taken away from the shipping cost (ie. 4$ PCB + 8.16$ shipping --> 4$ PCB + 4.16$ shipping), this has been done so that the project can still be submitted in the 30$ tier
 - The keycaps for the switches and the enclosure will be 3D-printed so no listing has been provided
@@ -171,20 +171,22 @@ Final payment window including tax:
 <br>
 <br>
 <br>
-Self-Funded part order (If the previous discounts are considered valid and are still availiable, then the extra money could still be used for these parts): 
+Self-Funded part order (If the previous discounts are considered valid and are still availiable, then the extra money could still be used for this): 
 
-<img width="1176" height="388" alt="Screenshot 2026-10-11 162357" src="https://github.com/user-attachments/assets/48063c6a-8552-4907-ad2a-aba513b133d9" />
+<img width="1179" height="397" alt="Battery Screenshot" src="https://github.com/user-attachments/assets/87416121-a9c9-4c0d-b4f8-c1a5aebd1975" />
 
 Final payment window including tax:
 
-<img width="373" height="353" alt="Screenshot 2026-10-11 162412" src="https://github.com/user-attachments/assets/0fed561d-aca2-473e-a989-ae6a1775ccbe" />
+<img width="380" height="360" alt="Battery Payment" src="https://github.com/user-attachments/assets/4ff240ae-e646-4dfd-bc84-87a962471d30" />
 
-(24.53kr = **$2.57**)
+(42.86kr = **$4.48**)
 <br>
 <br>
 <br>
 JLCPCB Order:
 
 <img width="1401" height="524" alt="Screenshot 2026-10-11 155750" src="https://github.com/user-attachments/assets/acf029ae-bf4f-4a1d-89cb-62d29947fcf1" />
-
-Grand Total (with discounts at time last checked): **$24.53**
+<br>
+<br>
+<br>
+Grand Total (with discounts at time last checked): <b>$25.43<b>
