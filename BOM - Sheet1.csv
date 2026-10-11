@@ -1,0 +1,13 @@
+Part,What it's for,Qty,Unit,Total,Vendor,Link
+XIAO ESP32 C3,The main microcontroller,1,$8.84,$8.84,AliExpress,https://www.aliexpress.com/item/1005008791937363.html
+"0.96"" OLED",For displaying the sprite and actions,1,$2.31,$2.31,AliExpress,https://www.aliexpress.com/item/1005006141235306.html
+MPU6050,For calculating orientation and acceleration,1,$2.10,$2.10,AliExpress,https://www.aliexpress.com/item/1005010602044047.html
+DHT11,"For measuring temperature and humidity (Just the bare module, no breakout board)",1,$2.80,$2.80,AliExpress,https://www.aliexpress.com/item/1005007728845619.html
+MX Switches,Buttons to control different functions (Minimum order size: 10pcs),1,$3.93,$3.93,AliExpress,https://www.aliexpress.com/item/1005006376024657.html
+PCB,Main Board (Use gerbers provided),1,$4.00,$4.00,JLCPCB,https://cart.jlcpcb.com/quote
+3.7V Battery,Powering the device while not connected (Can be self funded),1,$0.01,$0.01,AliExpress,https://www.aliexpress.com/item/1005007316920489.html
+Passive Components,"(Resistors, LED, Switch) (Self provided)",1,$0.01,$0.01,AliExpress,https://www.aliexpress.com/item/1005002489867848.html
+Screws,"For assembly of the enclosure, 4x self-tapping M3x8 and M2.5x8 (self provided)",1,$0.01,$0.01,AliExpress,https://www.aliexpress.com/item/33043885403.html
+Parts subtotal,,,,$24.01,,
+Tax & shipping,,,,$6.97,,
+Total,,,,$30.98,,
