@@ -2,17 +2,18 @@
 A motion controlled PCB pet!
 
 ### Introduction
-This is Starbie, a motion controlled, Tamagotchi style digital pet meant to keep you company on your desk. It uses a microcontroller, motion and enviroment sensor along with 2 buttons to allow you to interact with it. It was made with the help of this wonderful [guide](https://github.com/SharKingStudios/Starbie/tree/main) by Logan Peterson which guided me through the entire process of making my first PCB.
+This is Starbie, a motion controlled, Tamagotchi style digital pet meant to keep you company on your desk. It uses a microcontroller, motion and enviroment sensor, along with 2 buttons to allow you to interact with it. It was made with the help of this wonderful [guide](https://github.com/SharKingStudios/Starbie/tree/main) by Logan Peterson which guided me through the entire process of making my first PCB.
 
-Its has main functions include:
+Its main functions include:
 - A stats screen for your pet
 - Nap, Play and Pet actions
 - A shake interaction
-You can also customise your own sprite!
+
+And you can also customise your own sprite!
 
 However, I have also added a couple of my own features:
 - A basic power LED indicating when starbie is on
-- A external battery circuit making starbie portable
+- An external battery circuit making starbie portable
 - A 3D printed enclosure to tie everything together
 
 ### PCB and Schematic
@@ -30,24 +31,25 @@ This is the basic power LED which connects to the 3.3V output of the ESP32-C3 th
 <img width="374" height="714" alt="Power LED" src="https://github.com/user-attachments/assets/d5361e27-d755-443f-b2e6-0e1faa57f43e" />
 <br>
 <br>
-This is the external battery circuit that will power starbie through a battery. It will use a 500mAh 3.7V 503035 liPo that connects straight to the battery pads on the underside of the Xiao, meaning it will be charged and regulated with the battery charger already integrated into the Xiao. A switch has also been included in line from the battery so that starbie can be turned off easily.
+This is the external battery circuit that will power starbie through a battery. It will use a 500mAh 3.7V 503035 liPo that connects straight to the battery pads on the underside of the Xiao, meaning it will be charged and regulated with the battery charger already integrated into the microcontroller. A switch has also been included in line from the battery so that starbie can be turned off easily.
 <br>
-<img width="1024" height="453" alt="Battery Circuit" src="https://github.com/user-attachments/assets/39eafbdf-d80f-4112-a1b7-80fb47cfc81e" />
+<img width="1023" height="452" alt="Battery Circuit" src="https://github.com/user-attachments/assets/da613b3e-346b-40da-9d34-13edfc7361f7" />
 <br>
 <br>
 PCB:
 <br>
 <br>
-Here I have used a similar layout and shape as shown in the guide. At first I tried experimenting with the positioning of the buttons by having them side by side, but this turned out to make to routing more complicated by requiring more traces on the bottom layer. Because of this, I decided to keep the buttons like this even if it is a little more inconvenient. I have also added a couple of M3 screw holes on the edges so that I can mount the PCB into the enclosure that I designed.
+Here, I have used a similar layout and shape as shown in the guide. <br> <br>
+At first, I tried experimenting with the positioning of the buttons by having them side by side, but this turned out to make to routing more complicated by requiring more traces on the bottom layer. Because of this, I decided to align the buttons vertically, even if it is a little more inconvenient. I have also added a couple of M3 screw holes on the edges so that I can mount the PCB in the enclosure that I designed.
 
 <img width="975" height="844" alt="PCB Screenshot" src="https://github.com/user-attachments/assets/ecf05359-d4f9-4bc2-84c7-a0eec92e6835" />
 <br>
 <br>
-Here are the pads for the battery pads of the Xiao:
+Here are the contacts for the battery pads of the Xiao:
 
 <img width="668" height="791" alt="Battery Pads PCB" src="https://github.com/user-attachments/assets/2bcabdc7-d7fc-4982-b4c0-b12390785459" />
 
-These pads won't actually be making contact with the pads on the Xiao since it will be on top of header pins. But, I have put through-holes on these pads to allow for header pins to be pushed through them from the other side in order to make contact with the Xiao. This should allow the battery to be soldered to these pins from the bottom, making managing space a lot easier.
+These pads won't actually be making contact with the pads on the Xiao, since it will be raised on top of header pins. But, I have put through-holes on these pads to allow for header pins to be pushed through them. This should allow the battery to be soldered directly to these pins from the bottom, making managing space a lot easier.
 
 ### Code
 Most of the code is from the preset given by the guide, but there are some parts which I have modified:
@@ -112,13 +114,13 @@ This is the enclosure as a whole. It has several holes on the top for each compo
 <br>
 <br>
 <br>
-This how the battery and the switch are arranged below the PCB. The battery is completely hidden inside the bottom of the case while the switch sticks out a little bit through a hole so that you can use it.
+This is how the battery and the switch are arranged below the PCB. The battery is completely hidden inside the bottom of the case while the switch sticks out a little bit through a hole so that you can use it.
 
 <img width="839" height="700" alt="Bottom CAD screenshot" src="https://github.com/user-attachments/assets/8b23950f-5d51-4565-ae4a-2413339afe1a" />
 <br>
 <br>
 <br>
-This is how the entire enclosure is asssembled. The battery and the PCB are inserted into the case first, along with 4 M3x8 that screw into holes in the bottom of the case. The lid is then put on with 4 M2.5x8 along its edges. Finally after trimming the pins of the switch, it is super-glued onto the back of the PCB next to the battery.
+This is how the entire enclosure is assembled. The battery and the PCB are inserted into the case first, along with 4 M3x8 that screw into holes in the bottom of the case. The lid is then put on with 4 M2.5x8 along its edges. Finally after trimming the pins of the switch, it is super-glued onto the back of the PCB next to the battery.
 
 <img width="763" height="610" alt="Exploded View" src="https://github.com/user-attachments/assets/86b32f2f-18ba-4b32-922e-55aef99514db" />
 <br>
@@ -184,4 +186,4 @@ JLCPCB Order:
 <img width="1401" height="524" alt="Screenshot 2026-10-11 155750" src="https://github.com/user-attachments/assets/acf029ae-bf4f-4a1d-89cb-62d29947fcf1" />
 <br>
 <br>
-**Grand Total** (with all discounts and self-funded parts): <b>$24.25<b>
+--> Grand Total (with all discounts and self-funded parts): <b>$24.25<b>
