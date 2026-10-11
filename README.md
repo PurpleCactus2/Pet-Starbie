@@ -1,5 +1,7 @@
-# Pet-Starbie
+# Starbie
 A motion controlled PCB pet!
+
+<img width="751" height="564" alt="PCB Render" src="https://github.com/user-attachments/assets/b47fb055-e034-4edb-ae34-a0e7c0f3f96a" />
 
 ### Introduction
 This is Starbie, a motion controlled, Tamagotchi style digital pet meant to keep you company on your desk. It uses a microcontroller, motion and enviroment sensor, along with 2 buttons to allow you to interact with it. It was made with the help of this wonderful [guide](https://github.com/SharKingStudios/Starbie/tree/main) by Logan Peterson which guided me through the entire process of making my first PCB.
