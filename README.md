@@ -184,4 +184,4 @@ JLCPCB Order:
 <img width="1401" height="524" alt="Screenshot 2026-10-11 155750" src="https://github.com/user-attachments/assets/acf029ae-bf4f-4a1d-89cb-62d29947fcf1" />
 <br>
 <br>
-Grand Total (with all discounts and self-funded parts): <b>$24.25<b>
+**Grand Total** (with all discounts and self-funded parts): <b>$24.25<b>
