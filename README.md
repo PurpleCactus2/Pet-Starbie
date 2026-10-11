@@ -1,17 +1,132 @@
 # Pet-Starbie
-A PCB pet created from hackclub's "Starbie" guide
+A motion controlled PCB pet!
 
 ### Introduction
-*Insert general info here*
+This is Starbie, a motion controlled, Tamagotchi style digital pet meant to keep you company on your desk. It uses a microcontroller, motion and enviroment sensor along with 2 buttons to allow you to interact with it. It was made with the help of this wonderful [guide](https://github.com/SharKingStudios/Starbie/tree/main) by Logan Peterson which guided me through the entire process of making my first PCB.
+
+Its has main functions include:
+- A stats screen for your pet
+- Nap, Play and Pet actions
+- A shake interaction
+You can also customise your own sprite!
+
+However, I have also added a couple of my own features:
+- A basic power LED indicating when starbie is on
+- A external battery circuit making starbie portable
+- A 3D printed enclosure to tie everything together
 
 ### PCB and Schematic
-*Insert schematic and PCB screenshots and explations here*
+This is the entire schematic using the connections and components that are described in the guide.
+The ESP32-C3 connects the buttons through 2 GPIO pins, the screen and the motion sensor through I2C, and also supplies the steady 3.3V that the circuit needs.
+
+<img width="1027" height="540" alt="Schematic Screenshot" src="https://github.com/user-attachments/assets/aa34d93c-659d-4542-b5a1-ef6acc125ab9" />
+<br>
+<br>
+Here are the 2 things that I added:
+<br>
+<br>
+This is the basic power LED which connects to the 3.3V output of the ESP32-C3 through a 220Ω resistor. The LED itself will just be a standard 5mm 2V red LED that indicates whenever the circuit is connected to power.
+<br>
+<img width="374" height="714" alt="Power LED" src="https://github.com/user-attachments/assets/d5361e27-d755-443f-b2e6-0e1faa57f43e" />
+<br>
+<br>
+This is the external battery circuit that will power starbie through a battery. It will use a 500mAh 3.7V 503035 liPo that connects straight to the battery pads on the underside of the Xiao, meaning it will be charged and regulated with the battery charger already integrated into the Xiao. A switch has also been included in line from the battery so that starbie can be turned off easily.
+<br>
+<img width="1024" height="453" alt="Battery Circuit" src="https://github.com/user-attachments/assets/39eafbdf-d80f-4112-a1b7-80fb47cfc81e" />
+<br>
+<br>
+PCB:
+<br>
+<br>
+Here I have used a similar layout and shape as shown in the guide. At first I tried experimenting with the positioning of the buttons by having them side by side, but this turned out to make to routing more complicated by requiring more traces on the bottom layer. Because of this, I decided to keep the buttons like this even if it is a little more inconvenient. I have also added a couple of M3 screw holes on the edges so that I can mount the PCB into the enclosure that I designed.
+
+<img width="975" height="844" alt="PCB Screenshot" src="https://github.com/user-attachments/assets/ecf05359-d4f9-4bc2-84c7-a0eec92e6835" />
+<br>
+<br>
+Here are the pads for the battery pads of the Xiao:
+
+<img width="668" height="791" alt="Battery Pads PCB" src="https://github.com/user-attachments/assets/2bcabdc7-d7fc-4982-b4c0-b12390785459" />
+
+These pads won't actually be making contact with the pads on the Xiao since it will be on top of header pins. But, I have put through-holes on these pads to allow for header pins to be pushed through them from the other side in order to make contact with the Xiao. This should allow the battery to be soldered to these pins from the bottom, making managing space a lot easier.
 
 ### Code
-*Insert code screenshots and explanation here*
+Most of the code is from the preset given by the guide, but there are some parts which I have modified:
+<br>
+<br>
+These 2 pins were previously mismatched with SCL on 7 and SDA on 6 while my PCB and schematic has SCL on 6 and SDA on 7. This would have thrown an error where the Xiao would not be able to communicate with the screen or motion sensor. Luckily the ESP32-C3 is able to reroute these I2C connections easily.
+~~~cpp
+const int I2C_SDA_PIN = 7;
+const int I2C_SCL_PIN = 6;
+~~~
+<br>
+<br>
+This was an optional function given in the guide that could be inserted above the drawHeart function. It will create sparkles behind the pet as it moves.
+
+~~~cpp
+void drawSparkle(int x, int y) {
+  display.drawPixel(x, y - 2, SSD1306_WHITE);
+  display.drawPixel(x - 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 2, y, SSD1306_WHITE);
+  display.drawPixel(x, y, SSD1306_WHITE);
+  display.drawPixel(x + 2, y, SSD1306_WHITE);
+  display.drawPixel(x - 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x, y + 2, SSD1306_WHITE);
+}
+~~~
+
+This is what actually calls the drawSparkle function
+~~~cpp
+if (!isNapping() && (now / 250) % 2 == 0) {
+  drawSparkle(petX - 4, petY + 18);
+}
+~~~
+<br>
+<br>
+This is a byte list created from a custom 32x32px sprite which I drew.
+
+~~~cpp
+const uint8_t PROGMEM PET_SPRITE[] = {
+  0x00, 0x0f, 0xf0, 0x00, 0x00, 0x70, 0x0e, 0x00, 0x01, 0x80, 0x01, 0x80, 0x02, 0x00, 0x00, 0x40, 
+	0x04, 0x00, 0x00, 0x20, 0x08, 0x00, 0x00, 0x10, 0x10, 0x00, 0x00, 0x08, 0x20, 0x00, 0x38, 0x04, 
+	0x20, 0x00, 0x38, 0x04, 0x40, 0x00, 0x30, 0x02, 0x40, 0x00, 0x00, 0x02, 0x40, 0x00, 0x00, 0x02, 
+	0x80, 0x00, 0x00, 0x3c, 0x80, 0x00, 0x03, 0xe0, 0x80, 0x00, 0x1e, 0x00, 0x80, 0x00, 0x20, 0x00, 
+	0x80, 0x00, 0x20, 0x00, 0x80, 0x00, 0x1e, 0x00, 0x80, 0x00, 0x03, 0xe0, 0x80, 0x00, 0x00, 0x3c, 
+	0x40, 0x00, 0x00, 0x02, 0x40, 0x00, 0x00, 0x02, 0x40, 0x00, 0x00, 0x02, 0x20, 0x00, 0x00, 0x04, 
+	0x20, 0x00, 0x00, 0x04, 0x10, 0x00, 0x00, 0x08, 0x08, 0x00, 0x00, 0x10, 0x04, 0x00, 0x00, 0x20, 
+	0x02, 0x00, 0x00, 0x40, 0x01, 0x80, 0x01, 0x80, 0x00, 0x70, 0x0e, 0x00, 0x00, 0x0f, 0xf0, 0x00,
+};
+~~~
+
+The sprite should look like this:
+
+<img width="32" height="32" alt="Pac Man Sprite" src="https://github.com/user-attachments/assets/7605e1dd-0ee2-4dc2-abb2-5c2a01e3cbf6" />
 
 ### Enclosure
-*Insert CAD screenshots and explanation here*
+I wanted to make the PCB a little more personalised and I also wanted to have a neat place to store the battery. Because of this, I decided to design a 3D printable enclosure meant to be assembled with screws and a little bit of glue.
+
+This is the enclosure as a whole. It has several holes on the top for each component that sticks through, along with 4 M2.5x8 screw holes along the edge of the lid for assembly.
+
+<img width="1085" height="762" alt="CAD Screenshot" src="https://github.com/user-attachments/assets/261cf540-edd5-4df6-9f74-b336aeb3a1d0" />
+<br>
+<br>
+<br>
+This how the battery and the switch are arranged below the PCB. The battery is completely hidden inside the bottom of the case while the switch sticks out a little bit through a hole so that you can use it.
+
+<img width="839" height="700" alt="Bottom CAD screenshot" src="https://github.com/user-attachments/assets/8b23950f-5d51-4565-ae4a-2413339afe1a" />
+<br>
+<br>
+<br>
+This is how the entire enclosure is asssembled. The battery and the PCB are inserted into the case first, along with 4 M3x8 that screw into holes in the bottom of the case. The lid is then put on with 4 M2.5x8 along its edges. Finally after trimming the pins of the switch, it is super-glued onto the back of the PCB next to the battery.
+
+<img width="763" height="610" alt="Exploded View" src="https://github.com/user-attachments/assets/86b32f2f-18ba-4b32-922e-55aef99514db" />
+<br>
+<br>
+<br>
+Here is a more detailed view of the screw holes inside the case as well as of the battery and switch placement:
+
+<img width="641" height="557" alt="Battery and Switch" src="https://github.com/user-attachments/assets/e9dc8ddb-39ac-46de-b902-cb4f2160892c" />
 
 ### BOM
 | Part | What it's for | Qty | Unit | Total | Vendor |
